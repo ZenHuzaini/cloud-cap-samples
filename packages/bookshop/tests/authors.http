@@ -1,0 +1,26 @@
+GET http://localhost:4004/admin/Authors
+
+### get one user
+GET http://localhost:4004/admin/Authors/105
+
+###ADD new author
+POST http://localhost:4004/admin/Authors HTTP/1.1
+Content-Type: application/json
+
+{
+    "ID": 105,
+    "name":"Zen Huzaini"
+}
+
+###Update
+PATCH http://localhost:4004/admin/Authors/105 HTTP/1.1
+Content-Type: application/json
+
+{
+    "placeOfBirth": "Wroclaw"
+}
+
+
+###Delete
+DELETE http://localhost:4004/admin/Authors/105 HTTP/1.1
+
