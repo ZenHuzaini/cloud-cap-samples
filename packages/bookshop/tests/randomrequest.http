@@ -1,0 +1,16 @@
+###
+http://localhost:4004/browse/Books?$select=ID,title,price //only sleecte the ID wtitle and price
+
+###
+http://localhost:4004/browse/Books(207)$select=ID,title,price //only select where the books ID is 207
+
+####
+http://localhost:4004/admin/Authors?$expand=books //it will expand the books of author. Like inner join or left join. Damn! so easy xD
+
+####
+http://localhost:4004/admin/Books?$skip=1&$top=2 // will show 2 top rows, but skip one
+
+####
+http://localhost:4004/admin/Books?$count=true // check if data is in there
+####
+http://localhost:4004/admin/Books?$orderBy=ID // show by order
